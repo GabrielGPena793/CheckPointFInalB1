@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap%27');
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    
+
+}
+
+/* ================== HEADER ======================= */
+
+.logo{
+    height: 3rem;
+    margin-left: 0.5rem;
+}
+
+
+/* ==================== MAIN ========================== */
+
+section{
+    height: calc(100vh - 74px);
+}
+
+#banner1{
+    background: url('../img/dog01-inteira.jpg') fixed  center/cover;
+    background-position: bottom;
+
+
+}
+#banner2{
+    background: url('../img/gato01-inteira.jpg') fixed  center/cover;
+    background-position: bottom;
+
+
+}
+
+#banner3{
+    background: url('../img/dog02-inteira.jpg') fixed  center/cover;
+    background-position: bottom;
+
+
+}
+ul li a.nav-link{
+    transition: all 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: purple;
+    transform: scale(1.08);
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+section#banner1 div {
+    position: relative;
+    top: -9.25rem;
+}
+
+p{
+    font-size: 1.625rem;
+}
+
+a.btn{
+    width: 7.5rem;
+    font-size: 1rem;
+    padding: 0.375rem;
+    box-shadow: 3px 3px 3px #0000005c;
+    font-weight: bold;
+    background:purple;
+    color: white;
+    border: none;
+    transition: all 0.8s;
+}
+
+
+@media (max-width: 575px){
+    #banner3 div{
+        width: 56%;
+        position: relative;
+        right: -5.40rem;
+    
+    }
+
+    #banner2 div{
+        width: 55%;
+    position: relative;
+    left: -5.50rem;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+}
+
+
+
+
+@media (min-width: 576px){
+    #banner3 div{
+        position: relative;
+    left: -73px;
+    }
+}

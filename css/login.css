@@ -5,6 +5,10 @@ main{
     background: url(../img/dog03-inteira.jpg) center/cover no-repeat;
 }
 
+form{
+   font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
 input{
     border: none;
     outline: none;

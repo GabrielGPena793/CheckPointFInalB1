@@ -5,6 +5,24 @@ main{
     background: url(../img/dog03-inteira.jpg) center/cover no-repeat;
 }
 
+#imagem{
+    display: none;
+    justify-content: center; 
+    align-items: center;
+    width: 294px;
+    height: 154px;
+    background: purple;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    border-radius: 50%;
+    border: 5px dotted yellow;
+    color: wheat;
+    font-weight: bold;
+    transition: 2s ease-in-out;
+    box-shadow: 0 0 10px black;
+}
+
 form{
    font-size: clamp(1rem, 4vw, 1.2rem);
 }
@@ -40,4 +58,30 @@ a{
 a:hover{
   
     color: purple;
+}
+
+@media (max-width: 990px) {
+    #imagem{
+        width: 244px;
+        height: 104px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #imagem{
+        left: 27%;
+        width: 214px;
+        height: 84px;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 320px) {
+    #imagem{
+        left: 14%;
+    }
 }
